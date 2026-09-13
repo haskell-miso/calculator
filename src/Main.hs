@@ -75,7 +75,7 @@ showNum n
   | n == fromIntegral (round n :: Int) = ms (show (round n :: Int))
   | otherwise                           = ms (show n)
 ----------------------------------------------------------------------------
-updateModel :: Action -> Effect parent Model Action
+updateModel :: Action -> Effect () () Model Action
 updateModel = \case
 
   Digit d -> do
