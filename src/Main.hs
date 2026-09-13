@@ -133,7 +133,7 @@ updateModel = \case
     put emptyModel
 ----------------------------------------------------------------------------
 -- | View
-viewModel :: Model -> View Model Action
+viewModel :: Model -> View () () Model Action
 viewModel m =
   vfrag
     [ vfrag
